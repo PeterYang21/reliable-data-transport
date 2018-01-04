@@ -2,6 +2,9 @@
 * Implement sending and receiving side of Go-Back-N, one of reliable data transport protocols. The program is run in a simulated environment containing upper, lower layers of senders and receivers with link medium that can lose, reorder and corrupt packets. Routines are called when corresponding events occur.
 * Achieved error-free, loss-free, and in-order data delivery based on user defined parameters of underlying link. 
 
+## Diagram
+![](img/diagram.png)
+
 ## Parameters in simulator
 * Simulation time in seconds.
 * Average intervals between consecutive messages passed from the upper layer at the sender (in seconds). The actual interval varies between zero and twice the average.
@@ -22,3 +25,5 @@ The following are a few sample test cases.
 * rdt_sim 1000 0.1 100 0 0 0.02 0 - there is no packet loss or reordering, but there is packet corruption in the underlying link medium. 
 * rdt_sim 1000 0.1 100 0.02 0.02 0.02 0 - there could be packet loss, corruption, or reordering in the underlying link medium.
 
+</br> Sample output
+![](img/output.png)
