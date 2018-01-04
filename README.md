@@ -25,5 +25,5 @@ The following are a few sample test cases.
 * rdt_sim 1000 0.1 100 0 0 0.02 0 - there is no packet loss or reordering, but there is packet corruption in the underlying link medium. 
 * rdt_sim 1000 0.1 100 0.02 0.02 0.02 0 - there could be packet loss, corruption, or reordering in the underlying link medium.
 
-</br> Sample output
+Sample output
 ![](img/output.png)
