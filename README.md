@@ -1,4 +1,5 @@
 # Reliable Data Transport Protocol
+## Description
 * Implement sending and receiving side of Go-Back-N, one of reliable data transport protocols. The program is run in a simulated environment containing upper, lower layers of senders and receivers with link medium that can lose, reorder and corrupt packets. Routines are called when corresponding events occur.
 * Achieved error-free, loss-free, and in-order data delivery based on user defined parameters of underlying link. 
 
